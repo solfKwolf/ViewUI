@@ -344,6 +344,7 @@
             },
             handleInput (event) {
                 this.query = event.target.value;
+                this.$refs.drop.update();
             },
             handleSelectItem (index) {
                 const item = this.querySelections[index];
